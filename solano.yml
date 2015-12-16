@@ -1,5 +1,5 @@
 system:
-  queue: 'docker'
+  queue: 'agent-testing'
   docker: true
 
 environment:
