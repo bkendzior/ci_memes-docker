@@ -1,4 +1,5 @@
 system:
+  queue: 'docker'
   docker: true
 
 environment:
