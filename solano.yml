@@ -28,7 +28,7 @@ hooks:
     grep -v ^"CREATE DATABASE " create-db.sql | grep -v ^"USE " > create-test-db.sql
     composer install
   worker_setup: mysql -u$TDDIUM_DB_USER -p$TDDIUM_DB_PASSWORD $TDDIUM_DB_NAME < create-test-db.sql
-  post_build: ./scripts/solano-deploy.sh 
+#  post_build: ./scripts/solano-deploy.sh 
 
 php:
   php_version: "5.6"
